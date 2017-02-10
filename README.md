@@ -6,7 +6,7 @@ A command-line Bing dictionary aim at running on Linux
 # Installation
 ## Get the Source File
 ```
-git clone https://github.com/JasonHe0727/Command-line_Bing_Dictionary/tree/master/BingDict 
+git clone https://github.com/JasonHe0727/Command-line_Bing_Dictionary
 ```
 ## Install the Dependencies
 Install mono and mplayer. In Debian/Ubuntu and their derivatives, you can type the following commands.
