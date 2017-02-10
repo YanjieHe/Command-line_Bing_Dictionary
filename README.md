@@ -12,7 +12,7 @@ sudo apt-get install mono-complete
 sudo apt-get install mplayer
 ```
 
-## Get the Source File And Execute the Program
+## Get the Source Files And Execute the Program
 
 ```
 git clone https://github.com/JasonHe0727/Command-line_Bing_Dictionary.git
