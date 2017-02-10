@@ -1,5 +1,5 @@
 # Command-line_Bing_Dictionary
-A command-line Bing dictionary aim at running on Linux
+A command-line Bing dictionary running on Linux.
 
 # Screenshot
 ![image](https://github.com/JasonHe0727/Command-line_Bing_Dictionary/blob/master/Screenshot.png)
