@@ -24,7 +24,7 @@ namespace BingDict
             process.Close();
         }
 
-        public void PronunceWord(string command, QueryResult result)
+        public void PronounceWord(string command, QueryResult result)
         {
             if (result.pronunciation != null)
             {

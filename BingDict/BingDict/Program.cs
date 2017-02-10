@@ -38,7 +38,7 @@ namespace BingDict
                     {
                         if (LastQuery != null)
                         {
-                            sounder.PronunceWord(line, LastQuery);
+                            sounder.PronounceWord(line, LastQuery);
                         }
                         else
                         {
