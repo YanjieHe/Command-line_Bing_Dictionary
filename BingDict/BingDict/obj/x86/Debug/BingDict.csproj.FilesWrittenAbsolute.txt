@@ -1,0 +1,6 @@
+/home/jasonhe/MyCode/CSharpCode/Tools/BingDict/BingDict/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/jasonhe/MyCode/CSharpCode/Tools/BingDict/BingDict/bin/Debug/BingDict.exe.mdb
+/home/jasonhe/MyCode/CSharpCode/Tools/BingDict/BingDict/bin/Debug/BingDict.exe
+/home/jasonhe/MyCode/CSharpCode/Tools/BingDict/BingDict/obj/x86/Debug/BingDict.exe
+/home/jasonhe/MyCode/CSharpCode/Tools/BingDict/BingDict/obj/x86/Debug/BingDict.exe.mdb
+/home/jasonhe/MyCode/CSharpCode/Tools/BingDict/BingDict/bin/Debug/Newtonsoft.Json.dll
