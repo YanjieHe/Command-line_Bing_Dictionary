@@ -8,14 +8,13 @@ namespace BingDict
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("=== Command-line Bing dictionary ===");
-            Console.WriteLine("Author: Jason He");
-            Console.WriteLine();
-            Console.WriteLine("Type Ctrl-D or input -q to quit.");
-            LineEditor editor = new LineEditor("Bind Dictionary");
+			PrintIntroduction();
+
+            LineEditor editor = new LineEditor("Bing Dictionary");
             var dic = new BingDictionary();
             var sounder = new Sounder();
             QueryResult LastQuery = null;
+
             while (true)
             {
                 string line = editor.Edit("> ", string.Empty); 
@@ -52,5 +51,14 @@ namespace BingDict
                 }
             }
         }
+
+		static void PrintIntroduction()
+		{
+            Console.WriteLine("=== Command-line Bing dictionary ===");
+            Console.WriteLine("Author: Jason He");
+            Console.WriteLine();
+            Console.WriteLine("Type Ctrl-D or input -q to quit.");
+		}
+
     }
 }

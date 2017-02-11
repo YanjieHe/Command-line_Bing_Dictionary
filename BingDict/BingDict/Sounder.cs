@@ -30,25 +30,11 @@ namespace BingDict
             {
                 if (command == "-a")
                 {
-                    if (result.pronunciation.ContainsKey("AmEmp3"))
-                    {
-                        PlayAudio(result.pronunciation["AmEmp3"]);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Missing Pronunciation.");
-                    }
+					PlayPronunciation("AmEmp3", result);
                 }
                 else if (command == "-b")
                 {
-                    if (result.pronunciation.ContainsKey("BrEmp3"))
-                    {
-                        PlayAudio(result.pronunciation["BrEmp3"]);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Missing Pronunciation.");
-                    }
+					PlayPronunciation("BrEmp3", result);
                 }
                 else
                 {
@@ -60,6 +46,18 @@ namespace BingDict
                 Console.WriteLine("Missing Pronunciation.");
             }
         }
+
+		void PlayPronunciation(string type, QueryResult result)
+		{
+			if (result.pronunciation.ContainsKey(type))
+			{
+				PlayAudio(result.pronunciation[type]);
+			}
+			else
+			{
+				Console.WriteLine("Missing Pronunciation.");
+			}
+		}
 
     }
 }

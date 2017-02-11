@@ -29,9 +29,20 @@ namespace BingDict
 
         public void PrintResult(QueryResult result)
         {
-            Console.WriteLine(result.word);
-            Console.WriteLine();
+			PrintWord(result);
+			PrintPronunciation(result);
+			PrintDefinitions(result);
+			PrintSamples(result);
+        }
 
+		void PrintWord(QueryResult result)
+		{
+            Console.WriteLine(result.word);
+		}
+
+		void PrintPronunciation(QueryResult result)
+		{
+            Console.WriteLine();
             Console.WriteLine("Pronunciation:");
             if (result.pronunciation != null)
             {
@@ -44,8 +55,10 @@ namespace BingDict
 					}
                 }
             }
+		}
+		void PrintDefinitions(QueryResult result)
+		{
             Console.WriteLine();
-
             Console.WriteLine("Definitions: ");
             if (result.defs != null)
             {
@@ -57,6 +70,10 @@ namespace BingDict
                     }
                 }
             }
+		}
+
+		void PrintSamples(QueryResult result)
+		{
             Console.WriteLine();
             Console.WriteLine("Samples: ");
             if (result.sams != null)
@@ -74,7 +91,7 @@ namespace BingDict
                 }
             }
             Console.WriteLine();
-        }
+		}
 
         string RequestWord(string word)
         {
